@@ -1,0 +1,176 @@
+* CSS Reset*/
+*{
+
+    margin: 0;
+    padding: 0;
+}
+/*  CSS Variable */
+
+:root{
+    
+    --navbar-height :59px;
+}
+
+/* Navigation Bar */
+
+#navbar{
+    display: flex;
+    position:relative;
+    align-items: center;
+    top: 0px;
+
+}
+#navbar::before{
+    content:"dsreghiruhgjengjtrntngnregj";
+    background:rgb(155, 18, 18);
+    position: absolute;
+     height: 100%;
+      width:100%;
+      top: 0px;
+      left: 0px;
+    z-index: -1;
+    opacity:0.4 ;
+
+}
+
+/* Navigation Bar: Logo and Image */
+
+#logo{ 
+    margin :10px 34px;
+}
+
+    #logo img{
+                height:40px ;
+                margin :34px  ;
+                border-radius: 360dvw;
+    }
+
+/* Navigation Bar : list Styling */
+
+  
+#navbar ul{
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+}
+#navbar ul li{
+ list-style: none ;
+ font-size: 1.3rem;
+      color:white
+ }
+#navbar ul li a{
+ padding: 1px 22px;
+ border-radius: 20px;
+ text-decoration: none;
+ color:white;
+
+ }
+ #navbar ul li a:hover{
+   background: white;
+    color:black;
+    }
+
+    /*Home Section */
+  
+
+       #home{
+                 display: flex;
+                 flex-direction:column;
+                  padding: 2px 200px;
+                  align-items:center ;
+                  justify-content: center;
+                  height: 578px;
+                  text-align: center;
+           }
+
+    #home::before{
+        content:"";
+        background:url('/img/bg2.jpg');
+        position: absolute;
+         height:100%;
+          width:100%;
+          /* top: 0px; */
+          /* left: 0px */
+        z-index: -1;
+        opacity:0.29;
+     }
+     #home h1{
+        color: black;
+        text-align: center;
+        font-size: 55px;
+        font-family: 'Raleway', sans-serif; 
+     }
+
+     #home p{
+        color: black;
+        text-align: center;
+        font-size: 1.9rem;
+        font-family: 'Raleway', sans-serif;
+     }
+    /* service Section */
+
+     #services{
+          display:flex;
+        
+          margin: 34px;
+      }
+      #services.box{ 
+              border: 2px solid brown;
+               border-radius: 28px;
+               padding: 34px;
+               margin: 3px 6px;
+               background: #f2f2f2; 
+              /* display: flex; */
+              /* flex-direction: column; */
+              /* justify-content: space-between; */
+              /* vertical-align: auto; */
+              
+     }
+     
+     #services.box img{
+            height: 160px;
+            display: block;
+            margin: auto;
+            width: 25px;
+            border-radius: 34px;
+         }
+
+         /* Client Section */
+
+
+         #client-section{
+                      height:34px;
+         }
+         #client{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         #client img{
+               height:144px;
+
+         }
+   
+   
+     /*Utility Classes*/
+
+     .h-primary{
+          font-size: 3.8rem;
+          padding: 12px;
+     }
+     .h-secondry{
+        font-size: 2.3rem;
+        padding: 12px;
+   }
+     .btn{
+        padding:6px 20px;
+        border: 2px solid white;
+        margin: 17px;
+        background-color: brown;
+        color: white;
+        font-size: 1.5rem;
+        border-radius: 11px;
+        cursor: pointer;
+     }
+.center{
+    text-align: center;
+}

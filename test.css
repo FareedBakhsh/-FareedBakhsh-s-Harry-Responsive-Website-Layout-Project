@@ -1,0 +1,155 @@
+* CSS Reset*/
+*{
+
+    margin: 0;
+    padding: 0;
+}
+/*  CSS Variable */
+
+:root{
+    
+    --navbar-height :59px;
+}
+
+/* Navigation Bar */
+
+#navbar{
+    display: flex;
+    position:relative;
+    align-items: center;
+
+}
+#navbar::before{
+    content:"dsreghiruhgjengjtrntngnregj";
+    background:rgb(155, 18, 18);
+    position: absolute;
+     height: 100%;
+      width:100%;
+    z-index: -1;
+    opacity:0.4 ;
+
+}
+
+/* Navigation Bar: Logo and Image */
+
+#logo{ 
+    margin :10px 34px;
+}
+
+    #logo img{
+                height:40px ;
+                margin :34px  ;
+                border-radius: 360dvw;
+    }
+
+/* Navigation Bar : list Styling */
+
+  
+#navbar ul{
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+}
+#navbar ul li{
+ list-style: none ;
+ font-size: 1.3rem;
+      color:white
+ }
+#navbar ul li a{
+ padding: 1px 22px;
+ border-radius: 20px;
+ text-decoration: none;
+ color:white;
+
+ }
+ #navbar ul li a:hover{
+   background: white;
+    color:black;
+    }
+
+    /*Home Section */
+  
+
+       #home{
+                 display: flex;
+                 flex-direction:column;
+                  padding: 2px 1px 200px;
+                  align-items:center ;
+                  justify-content: center;
+                  height:775px;
+           }
+
+    #home::before{
+        content:"";
+        background:url('/img/bg2.jpg')no-repeat center center/cover;
+        position: absolute;
+         height:100%;
+          width:100%;
+        z-index: -1;
+        opacity:0.69;
+     }
+     #home h1{
+        color: black;
+        text-align: center;
+        font-size: 55px;
+        font-family: 'Raleway', sans-serif; 
+     }
+
+     #home p{
+        color: black;
+        text-align: center;
+        font-size: 1.9rem;
+        font-family: 'Raleway', sans-serif;
+     }
+    /* service Section */
+
+     #services{
+          display:flexbox;
+          text-align: center;
+          margin: 34px;
+      }
+      .box{ 
+              border: 2px solid brown;
+              border-radius: 28px;
+              padding: 30px;
+              margin: 34px;
+              background: #fff;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              vertical-align: auto;
+              
+     }
+     
+         .box img{
+            height: 30px;
+            width: 25px;
+            border-radius: 34px;
+         }
+     /* #section{ } */
+     /* #section{ } */
+     /* #section{ } */
+     /* #section{ } */
+     
+     /* Utility Classes */
+
+     .h-proimary{
+          font-size: 3.8rem;
+          padding: 12px;
+     }
+     .h-secondry{
+        font-size: 2.8rem;
+        padding: 12px;
+   }
+     .btn{
+        padding:6px 20px;
+        border: 2px solid white;
+        margin: 17px;
+        background-color: brown;
+        color: white;
+        font-size: 1.5rem;
+        border-radius: 11px;
+        cursor: pointer;
+     }
+.center{
+    text-align: center;
+}
